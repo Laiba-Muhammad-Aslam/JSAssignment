@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #0D6DB7;
+    --secondary-color: #E9ECEF;
+}
+/* NAVBAR  */
+.navbar p{
+    color: var(--primary-color);
+}
+.navbar #logo{
+    width: 8rem;
+    height: 4rem;
+}
+.navbar{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+/* HERO SECTION  */
+.hero{
+    background-color: var(--secondary-color);
+}
+.hero h1{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+}
+.hero .row h1:nth-child(1){
+    color: var(--primary-color);
+}
+.hero p{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+}
+.hero a img{
+    width: 3rem;
+    height: 3rem;
+}
+.hero a{
+    text-decoration: none;
+    background-color: white;
+    /* border: 2px solid red; */
+    width: 20rem;
+}
+/* FOOTER SECTION  */
+footer span{
+    color: #007BFF;
+}
