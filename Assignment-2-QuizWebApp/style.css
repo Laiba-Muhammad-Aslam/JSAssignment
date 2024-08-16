@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
 }
 :root{
     --primary-color: #0D6DB7;
@@ -48,4 +50,36 @@
 /* FOOTER SECTION  */
 footer span{
     color: #007BFF;
+}
+
+/* MAIN PAGE CSS  */
+
+.navbar #user{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.navbar button{
+    color: var(--primary-color);
+}
+main h1{
+    color: var(--primary-color);
+    font-weight: 250;
+}
+.card button{
+    border: 1px solid var(--primary-color);
+}
+.card button a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+main .card{
+    max-width: 22rem;
+    border: 1px solid gainsboro;
+}
+
+@media screen and (max-width:998px) {
+    main .card{
+        max-width: 50rem;
+    }
+     
 }
