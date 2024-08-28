@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+.calendar {
+    width: 350px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #f1f1f1;
+    padding: 10px 0;
+}
+.calendar-days div {
+    padding: 10px 0;
+}
+.calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.calendar-dates div {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.calendar-dates .current-date {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+}
+.pre{
+    color: grey;
+}
