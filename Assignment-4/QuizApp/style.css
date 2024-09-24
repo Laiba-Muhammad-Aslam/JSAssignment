@@ -7,6 +7,7 @@
 }
 body{
     background-color: black;
+    background-color: #001e4d;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,4 +28,24 @@ body{
 .quiz h2{
     color: #001e4d;
     font-size: 18px;
+}
+.btn{
+    background-color: #fff;
+    color: #222;
+    font-weight: 500;
+    border: 1px solid #222;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn:hover{
+    background-color: #222;
+    color: #fff;
+}
+#nextBtn{
+    background-color: #001e4d;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
 }
