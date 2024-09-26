@@ -47,5 +47,5 @@ body{
     font-weight: 500;
     border-radius: 4px;
     cursor: pointer;
-    display: none;
+    /* display: none; */
 }
