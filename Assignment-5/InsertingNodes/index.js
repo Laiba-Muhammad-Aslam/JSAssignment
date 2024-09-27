@@ -23,3 +23,50 @@ card.appendChild(img);
 cardPara.appendChild(cardText1);
 card.appendChild(cardPara);
 document.body.appendChild(card);
+
+// FOOTER 
+
+var footer = document.createElement("footer");
+footer.setAttribute("class", "footer");
+
+// 1st List 
+
+var ul1 = document.createElement("ul");
+var li1 = document.createElement("li");
+var li1Text = document.createTextNode("About Us");
+li1.appendChild(li1Text);
+ul1.appendChild(li1);
+
+var li2 = document.createElement("li");
+var li2Text = document.createTextNode("Contact us");
+li2.appendChild(li2Text);
+ul1.appendChild(li2);
+
+var li3 = document.createElement("li");
+var li3Text = document.createTextNode("Career");
+li3.appendChild(li3Text);
+ul1.appendChild(li3);
+
+footer.appendChild(ul1);
+
+// 2nd List 
+
+var ul2 = document.createElement("ul");
+var li4 = document.createElement("li");
+var li4Text = document.createTextNode("About Us");
+li4.appendChild(li4Text);
+ul2.appendChild(li4);
+
+var li5 = document.createElement("li");
+var li5Text = document.createTextNode("Contact us");
+li5.appendChild(li5Text);
+ul2.appendChild(li5);
+
+var li6 = document.createElement("li");
+var li6Text = document.createTextNode("Career");
+li6.appendChild(li6Text);
+ul2.appendChild(li6);
+
+footer.appendChild(ul2);
+
+document.body.appendChild(footer);
