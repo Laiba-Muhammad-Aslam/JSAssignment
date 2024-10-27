@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Credit Card</title>
+  <!-- style sheet  -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- card container  -->
+<div class="container">
+    <div class="card">
+        <div class="card-inner">
+            <!-- front side of the card  -->
+            <div class="front">
+                <img src="https://i.ibb.co/PYss3yv/map.png" class="map-img">
+                <div class="row">
+                    <img src="https://i.ibb.co/G9pDnYJ/chip.png" width="60px">
+                    <img src="https://i.ibb.co/WHZ3nRJ/visa.png" width="60px">
+                </div>
+                <div class="row card-no" id="card-number">
+                    <p>XXXX</p>
+                    <p>XXXX</p>
+                    <p>XXXX</p>
+                    <p>XXXX</p>
+                </div>
+                <div class="row card-holder">
+                    <p>CARD HOLDER</p>
+                    <p>VALID TILL</p>
+                </div>
+                <div class="row name">
+                    <p id="card-holder-name">Account Holder Name</p>
+                    <p id="expiry-date">MM / YY</p>
+                </div>
+            </div>
+            <!-- back side of the card  -->
+            <div class="back">
+                <img src="https://i.ibb.co/PYss3yv/map.png" class="map-img">
+                <div class="bar"></div>
+                <div class="row card-priv">
+                    <div>
+                        <img src="https://i.ibb.co/S6JG8px/pattern.png">
+                    </div>
+                    <p>1010</p>
+                </div>
+                <div class="row card-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, architecto.</p>
+                </div>
+                <div class="row signature">
+                    <p>CUSTOMER SIGNATURE</p>
+                    <img src="https://i.ibb.co/WHZ3nRJ/visa.png" width="80px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Input Section -->
+    <div class="input-section">
+        <input type="text" id="account-number" placeholder="Enter Account Number" maxlength="16">
+        <input type="text" id="cardholder-name" placeholder="Enter Card Holder Name">
+        <input type="text" id="expiry-date-input" placeholder="Enter Expiry Date (MM / YY)">
+        <button id="btn">Create Card</button>
+    </div>
+</div>
+
+<!-- js file  -->
+ <script src="index.js"></script>
+
+</body>
+</html>
