@@ -22,5 +22,14 @@ function countVowels(string){
     }
     console.log("No of Vowels: " , vowels);
 }
-let sentence = prompt("Enter a String: ");
-countVowels(sentence);
+// let sentence = prompt("Enter a String: ");
+// countVowels(sentence);
+
+// 3. Write a function `reverseString` that takes a string and returns it reversed (e.g., "hello" becomes "olleh").
+
+function reverseString(str){
+    let word = str.split("").reverse().join("");
+    console.log(word)
+}
+let str = prompt("Enter your Word here.... ");
+reverseString(str)
