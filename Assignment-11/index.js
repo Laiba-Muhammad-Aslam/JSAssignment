@@ -31,8 +31,8 @@ function reverseString(str){
     let word = str.split("").reverse().join("");
     console.log(word)
 }
-let str = prompt("Enter your Word here.... ");
-reverseString(str);
+// let str = prompt("Enter your Word here.... ");
+// reverseString(str);
 
 // 4. Create a function `findMax` that takes an array of numbers and returns the largest number.
 
@@ -46,5 +46,13 @@ function findMax(arr){
     }
     return num;
 }
-let arr = [4, 6, 20, 15, 60];
-console.log(findMax(arr));
+// let arr = [4, 6, 20, 15, 60];
+// console.log(findMax(arr));
+
+// 12. Create a function `toUpperCase` that takes a string and returns it in uppercase.
+
+function toUpperCase(str){
+    return str.toUpperCase();
+}
+let str = prompt("Enter your String here.... ");
+console.log(toUpperCase(str));
