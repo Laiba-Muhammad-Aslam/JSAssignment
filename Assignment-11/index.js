@@ -32,4 +32,19 @@ function reverseString(str){
     console.log(word)
 }
 let str = prompt("Enter your Word here.... ");
-reverseString(str)
+reverseString(str);
+
+// 4. Create a function `findMax` that takes an array of numbers and returns the largest number.
+
+function findMax(arr){
+    let num = 0;
+    console.log(arr);
+    for(let i = 0; i< arr.length; i++){
+        if(arr[i] > num){
+          num = arr[i];
+    }
+    }
+    return num;
+}
+let arr = [4, 6, 20, 15, 60];
+console.log(findMax(arr));
