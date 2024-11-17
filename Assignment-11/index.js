@@ -54,5 +54,13 @@ function findMax(arr){
 function toUpperCase(str){
     return str.toUpperCase();
 }
-let str = prompt("Enter your String here.... ");
-console.log(toUpperCase(str));
+// let str = prompt("Enter your String here.... ");
+// console.log(toUpperCase(str));
+
+// 73. Write a function `greetUser` that takes a name and returns a greeting message (e.g., "Hello, [name]!").
+
+function greetUser(name){
+    return `Hello ${name}`;
+}
+let name = prompt("Enter a name here: ");
+console.log(greetUser(name));
