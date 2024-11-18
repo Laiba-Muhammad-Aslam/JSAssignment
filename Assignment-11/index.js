@@ -62,5 +62,13 @@ function toUpperCase(str){
 function greetUser(name){
     return `Hello ${name}`;
 }
-let name = prompt("Enter a name here: ");
-console.log(greetUser(name));
+// let name = prompt("Enter a name here: ");
+// console.log(greetUser(name));
+
+// 74. Create a function `squareNumber` that takes a number and returns its square.
+
+function squareNumber(number){
+    return number * number;
+}
+let number = +prompt("Enter a Number: ");
+console.log(squareNumber(number));
