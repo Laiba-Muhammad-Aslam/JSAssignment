@@ -49,6 +49,14 @@ function findMax(arr){
 // let arr = [4, 6, 20, 15, 60];
 // console.log(findMax(arr));
 
+// 11. Write a function `stringLength` that returns the length of a given string.
+
+function stringLength(str){
+    return str.length;
+}
+let str = prompt("Enter a String: ");
+console.log(stringLength(str));
+
 // 12. Create a function `toUpperCase` that takes a string and returns it in uppercase.
 
 function toUpperCase(str){
@@ -70,5 +78,5 @@ function greetUser(name){
 function squareNumber(number){
     return number * number;
 }
-let number = +prompt("Enter a Number: ");
-console.log(squareNumber(number));
+// let number = +prompt("Enter a Number: ");
+// console.log(squareNumber(number));
