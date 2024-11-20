@@ -54,8 +54,8 @@ function findMax(arr){
 function stringLength(str){
     return str.length;
 }
-let str = prompt("Enter a String: ");
-console.log(stringLength(str));
+// let str = prompt("Enter a String: ");
+// console.log(stringLength(str));
 
 // 12. Create a function `toUpperCase` that takes a string and returns it in uppercase.
 
@@ -64,6 +64,19 @@ function toUpperCase(str){
 }
 // let str = prompt("Enter your String here.... ");
 // console.log(toUpperCase(str));
+
+// 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
+
+function isAdult(age){
+    if(age >= 18){
+        return true
+    }
+    else{
+        return false
+    }
+}
+let age = +prompt("Enter your age: ");
+console.log(isAdult(age));
 
 // 73. Write a function `greetUser` that takes a name and returns a greeting message (e.g., "Hello, [name]!").
 
