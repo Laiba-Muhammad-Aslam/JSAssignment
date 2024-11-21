@@ -49,6 +49,41 @@ function findMax(arr){
 // let arr = [4, 6, 20, 15, 60];
 // console.log(findMax(arr));
 
+// 5. Write a function `isPalindrome` that checks if a given string is a palindrome (reads the same backward as forward).
+
+function isPalindrome(word){
+    let newWord = "";
+    for(let i = word.length - 1; i>=0; i--){
+        newWord+= word[i];
+    }
+    if(newWord === word){
+        console.log("Given Word is Palindrome");
+    }else{
+        console.log("Given Word is not a Palindrome");
+    }
+   
+}
+// let word = prompt("Enter a Word here: ");
+// isPalindrome(word.toLowerCase());
+
+// ***********************OR***************************** 
+
+function isPalindrome(word) {
+    let len = word.length;
+    for (let i = 0; i < len / 2; i++) {
+        // Compare characters from start and end
+        if (word[i] !== word[len - 1 - i]) {
+            console.log("Given word is not a palindrome");
+            return;
+        }
+    }
+    console.log("Given word is a palindrome");
+}
+
+// let word = prompt("Enter a word here: ");
+// isPalindrome(word.toLowerCase());
+
+
 // 11. Write a function `stringLength` that returns the length of a given string.
 
 function stringLength(str){
@@ -75,8 +110,8 @@ function isAdult(age){
         return false
     }
 }
-let age = +prompt("Enter your age: ");
-console.log(isAdult(age));
+// let age = +prompt("Enter your age: ");
+// console.log(isAdult(age));
 
 // 73. Write a function `greetUser` that takes a name and returns a greeting message (e.g., "Hello, [name]!").
 
