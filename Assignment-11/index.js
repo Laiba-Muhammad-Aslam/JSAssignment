@@ -83,6 +83,23 @@ function isPalindrome(word) {
 // let word = prompt("Enter a word here: ");
 // isPalindrome(word.toLowerCase());
 
+// 6. Create a function `fibonacci` that returns the nth Fibonacci number. 
+
+function fibonacci(num){
+    let x = 0;
+    let y = 1;
+    let fn = 0;
+
+    console.log(x)
+    while(y <= num){
+        console.log(y);
+        fn = x + y;
+        x = y;
+        y = fn;
+    }
+}
+let num = +prompt("Enter a Number: ");
+fibonacci(num);
 
 // 11. Write a function `stringLength` that returns the length of a given string.
 
