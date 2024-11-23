@@ -98,8 +98,20 @@ function fibonacci(num){
         y = fn;
     }
 }
-let num = +prompt("Enter a Number: ");
-fibonacci(num);
+// let num = +prompt("Enter a Number: ");
+// fibonacci(num);
+
+// 7. Write a function `factorial` that calculates the factorial of a given number.
+
+function factorial(num){
+    if(num === 0 || num === 1){
+        return 1
+    }else{
+        return num * factorial(num - 1);
+    }
+
+}
+console.log(factorial(4));
 
 // 11. Write a function `stringLength` that returns the length of a given string.
 
