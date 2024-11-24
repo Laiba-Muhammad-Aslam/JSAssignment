@@ -113,6 +113,17 @@ function factorial(num){
 }
 console.log(factorial(4));
 
+// 8. Create a function `removeDuplicates` that takes an array and returns a new array without duplicates.
+
+function removeDuplicates(...args){
+    let removeDuplicates = new Set(...args);
+    let newArr = [...removeDuplicates]
+    console.log(newArr);
+}
+let arr = [3, 5, 7, 8, 3, 0, 5];
+removeDuplicates(arr);
+
+
 // 11. Write a function `stringLength` that returns the length of a given string.
 
 function stringLength(str){
