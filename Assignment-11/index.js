@@ -111,7 +111,7 @@ function factorial(num){
     }
 
 }
-console.log(factorial(4));
+// console.log(factorial(4));
 
 // 8. Create a function `removeDuplicates` that takes an array and returns a new array without duplicates.
 
@@ -120,9 +120,20 @@ function removeDuplicates(...args){
     let newArr = [...removeDuplicates]
     console.log(newArr);
 }
-let arr = [3, 5, 7, 8, 3, 0, 5];
-removeDuplicates(arr);
+// let arr = [3, 5, 7, 8, 3, 0, 5];
+// removeDuplicates(arr);
 
+// 9. Write a function `sumArray` that takes an array of numbers and returns the sum.
+
+function sumArray(arr){
+    let sum = 0;
+    for(let i = 0; i <arr.length; i++){
+        sum+= arr[i];
+    }
+    return sum;
+}
+let arr = [2, 4, 5, 7];
+console.log("Sum of Array: " + sumArray(arr));
 
 // 11. Write a function `stringLength` that returns the length of a given string.
 
