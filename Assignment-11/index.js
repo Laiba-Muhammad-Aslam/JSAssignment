@@ -132,8 +132,16 @@ function sumArray(arr){
     }
     return sum;
 }
-let arr = [2, 4, 5, 7];
-console.log("Sum of Array: " + sumArray(arr));
+// let arr = [2, 4, 5, 7];
+// console.log("Sum of Array: " + sumArray(arr));
+
+// 10. Create a function `sortArray` that takes an array of numbers and returns it sorted in ascending order.
+
+function sortArray(arr) {
+    return arr.sort((a, b) => a - b);
+}
+const numbers = [5, 2, 9, 1, 5, 6];
+console.log(sortArray(numbers));
 
 // 11. Write a function `stringLength` that returns the length of a given string.
 
