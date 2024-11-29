@@ -140,8 +140,8 @@ function sumArray(arr){
 function sortArray(arr) {
     return arr.sort((a, b) => a - b);
 }
-const numbers = [5, 2, 9, 1, 5, 6];
-console.log(sortArray(numbers));
+// const numbers = [5, 2, 9, 1, 5, 6];
+// console.log(sortArray(numbers));
 
 // 11. Write a function `stringLength` that returns the length of a given string.
 
@@ -159,6 +159,18 @@ function toUpperCase(str){
 // let str = prompt("Enter your String here.... ");
 // console.log(toUpperCase(str));
 
+// 13. Write a function `capitalizeFirstLetter` that capitalizes the first letter of each word in a string.
+
+function capitalizeFirstLetter(word){
+    let newWord = "";
+    for(let i=0; i<word.length; i++){
+       newWord = word[0].toUpperCase() + word.slice(1);
+    }
+    return newWord;
+
+}
+// console.log(capitalizeFirstLetter("hello"));
+// console.log(capitalizeFirstLetter("mango"));
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
 function isAdult(age){
