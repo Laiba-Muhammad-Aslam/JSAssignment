@@ -171,6 +171,17 @@ function capitalizeFirstLetter(word){
 }
 // console.log(capitalizeFirstLetter("hello"));
 // console.log(capitalizeFirstLetter("mango"));
+
+// 14. Create a function `mergeArrays` that takes two arrays and merges them into one.
+
+function mergeArrays(arr1, arr2){
+    let finalArray = [...arr1, ...arr2];
+    return finalArray;
+}
+let arr1 = [1, 3, 66, 90];
+let arr2 = [78, 92, 100];
+console.log(mergeArrays(arr1, arr2));
+
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
 function isAdult(age){
