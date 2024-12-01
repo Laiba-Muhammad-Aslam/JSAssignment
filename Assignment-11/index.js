@@ -178,9 +178,24 @@ function mergeArrays(arr1, arr2){
     let finalArray = [...arr1, ...arr2];
     return finalArray;
 }
-let arr1 = [1, 3, 66, 90];
-let arr2 = [78, 92, 100];
-console.log(mergeArrays(arr1, arr2));
+// let arr1 = [1, 3, 66, 90];
+// let arr2 = [78, 92, 100];
+// console.log(mergeArrays(arr1, arr2));
+
+// 15. Write a function `isPrime` that checks if a number is prime.
+
+function isPrime(number){
+    if(number % 2 === 0){
+        return "It is not a Prime Number";
+    }else{
+        return "It is a Prime Number";
+    }
+}
+console.log(isPrime(1));
+console.log(isPrime(3));
+console.log(isPrime(5));
+console.log(isPrime(7));
+console.log(isPrime(4));
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
