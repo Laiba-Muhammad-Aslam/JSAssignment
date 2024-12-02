@@ -191,11 +191,28 @@ function isPrime(number){
         return "It is a Prime Number";
     }
 }
-console.log(isPrime(1));
-console.log(isPrime(3));
-console.log(isPrime(5));
-console.log(isPrime(7));
-console.log(isPrime(4));
+// console.log(isPrime(1));
+// console.log(isPrime(3));
+// console.log(isPrime(5));
+// console.log(isPrime(7));
+// console.log(isPrime(4));
+
+// 16. Create a function `countWords` that counts the number of words in a string.
+
+function countWords(str){
+    str = str.trim();
+
+    if(str === ""){
+        return 0;
+    }
+
+    const word = str.split(/\s+/);
+
+    return word.length;
+
+}
+const str = "Hello, my name is Laiba Muhammad Aslam";
+console.log(countWords(str));
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
