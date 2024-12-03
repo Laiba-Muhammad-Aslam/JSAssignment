@@ -211,8 +211,22 @@ function countWords(str){
     return word.length;
 
 }
-const str = "Hello, my name is Laiba Muhammad Aslam";
-console.log(countWords(str));
+// const str = "Hello, my name is Laiba Muhammad Aslam";
+// console.log(countWords(str));
+
+// 17. Write a function `arrayContains` that checks if an array contains a specific value.
+
+function arrayContains(num){
+    let number = [3, 5, 8, 10, 100];
+    for(let i = 0; i< number.length; i++){
+        if(num === number[i]){
+            return "Number is exist in the array";
+        }
+    }
+    return "Number doesn't exist";
+}
+let askNumber = +prompt("Enter a number: ");
+console.log(arrayContains(askNumber));
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
