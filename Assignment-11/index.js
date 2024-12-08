@@ -225,8 +225,18 @@ function arrayContains(num){
     }
     return "Number doesn't exist";
 }
-let askNumber = +prompt("Enter a number: ");
-console.log(arrayContains(askNumber));
+// let askNumber = +prompt("Enter a number: ");
+// console.log(arrayContains(askNumber));
+
+// 18. Create a function `uniqueElements` that returns an array of unique elements from a given array.
+
+function uniqueElements(arr) {
+    return arr.filter(item => arr.indexOf(item) === arr.lastIndexOf(item));
+  }
+  
+const array = [1, 2, 2, 3, 4, 4, 5];
+console.log(uniqueElements(array)); 
+  
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
