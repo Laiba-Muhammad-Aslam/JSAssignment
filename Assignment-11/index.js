@@ -235,8 +235,14 @@ function uniqueElements(arr) {
   }
   
 const array = [1, 2, 2, 3, 4, 4, 5];
-console.log(uniqueElements(array)); 
-  
+// console.log(uniqueElements(array)); 
+
+// 19. Write a function `flattenArray` that flattens a nested array.
+
+function flattenArray(arr){
+    console.log(arr.flat());
+}
+flattenArray([1, 5, 8, [55, 90, 23], 86, [52, 100, 89], 900, 456, 986, [567, 378, 846]]);
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
