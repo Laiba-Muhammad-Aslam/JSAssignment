@@ -253,7 +253,22 @@ function repeatString(str, number){
         return str.repeat(number);
     }
 }
-console.log(repeatString("Laiba", 2));
+// console.log(repeatString("Laiba", 2));
+
+// 21. Write a function `getRandomInt` that returns a random integer between two numbers.
+
+function getRandomInt(num){
+    ran = Math.floor(Math.random() * num);
+    console.log(ran);
+}
+// getRandomInt(5);
+
+// OR 
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+// console.log(getRandomInt(1, 5)); 
+
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
