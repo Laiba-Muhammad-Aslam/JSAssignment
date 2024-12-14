@@ -253,7 +253,7 @@ function repeatString(str, number){
         return str.repeat(number);
     }
 }
-// console.log(repeatString("Laiba", 2));
+console.log(repeatString("Laiba", 2));
 
 // 22. Create a function `average` that calculates the average of an array of numbers.
 
