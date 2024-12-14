@@ -253,8 +253,19 @@ function repeatString(str, number){
         return str.repeat(number);
     }
 }
-console.log(repeatString("Laiba", 2));
+// console.log(repeatString("Laiba", 2));
 
+// 22. Create a function `average` that calculates the average of an array of numbers.
+
+function average(arr){
+    let len = arr.length;
+    let sum = 0;
+    for(let i = 0; i <arr.length; i++){
+        sum+= arr[i];
+    }
+    return sum / len;
+}
+console.log(average([6, 8, 9, 5, 0]));
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
 function isAdult(age){
