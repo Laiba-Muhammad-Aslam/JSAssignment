@@ -265,7 +265,21 @@ function average(arr){
     }
     return sum / len;
 }
-console.log(average([6, 8, 9, 5, 0]));
+// console.log(average([6, 8, 9, 5, 0]));
+
+// 23. Write a function `removeSpaces` that removes all spaces from a string.
+
+function removeSpaces(str) {
+    var count = 0;
+    for (var i = 0; i < str.length; i++)
+      if (str[i] !== " ") str[count++] = str[i]; 
+    return count;
+  }
+let  str = "U BIT ka rac hi ".split("");
+let i = removeSpaces(str);
+// console.log(str.join("").substring(0, i));
+
+
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
 function isAdult(age){
