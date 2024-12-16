@@ -279,6 +279,24 @@ let  str = "U BIT ka rac hi ".split("");
 let i = removeSpaces(str);
 // console.log(str.join("").substring(0, i));
 
+// 24. Create a function `difference` that returns the difference between the largest and smallest numbers in an array.
+
+function difference(arr){
+    let max = -Infinity;
+    let min = Infinity;
+    for(let i = 0; i < arr.length; i++){
+       if(arr[i] > max){
+        max = arr[i];
+    }if(arr[i] < min){
+        min = arr[i];
+
+    }
+    }
+    console.log(`max: ${max}`);
+    console.log(`min: ${min}`);
+    return max - min;
+}
+console.log(difference([3, 7, 24, 9]));
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
