@@ -296,7 +296,27 @@ function difference(arr){
     console.log(`min: ${min}`);
     return max - min;
 }
-console.log(difference([3, 7, 24, 9]));
+// console.log(difference([3, 7, 24, 9]));
+
+// 25. Write a function `shuffledArray` that takes an array and returns it shuffled randomly.
+
+function shuffledArray(arr) {
+    let newArr = [];
+    let usedIndices = []; 
+    for (let i = 0; i < arr.length; i++) {
+        let ran;
+        do {
+            ran = Math.floor(Math.random() * arr.length); 
+        } while (usedIndices.includes(ran)); 
+        usedIndices.push(ran); 
+        newArr[ran] = arr[i]; 
+    }
+    console.log(newArr);
+    return newArr;
+}
+
+shuffledArray([78, 1, 6, 7, 9]);
+
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
