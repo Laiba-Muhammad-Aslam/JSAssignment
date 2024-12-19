@@ -315,8 +315,24 @@ function shuffledArray(arr) {
     return newArr;
 }
 
-shuffledArray([78, 1, 6, 7, 9]);
+// shuffledArray([78, 1, 6, 7, 9]);
 
+// 26. Create a function `longestWord` that returns the longest word in a string.
+
+function longestWord(str){
+    let words = str.split(' ');
+    // console.log(words);
+    let longest = "";
+
+    for(let word of words){
+        if(word.length > longest.length){
+            longest = word;
+        }
+    }
+    return longest;
+}
+console.log(longestWord("Hello this is me"));
+console.log(longestWord("The quick brown fox jumped over the lazy dog"));
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
