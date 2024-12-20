@@ -331,8 +331,17 @@ function longestWord(str){
     }
     return longest;
 }
-console.log(longestWord("Hello this is me"));
-console.log(longestWord("The quick brown fox jumped over the lazy dog"));
+// console.log(longestWord("Hello this is me"));
+// console.log(longestWord("The quick brown fox jumped over the lazy dog"));
+
+// 27. Write a function `countDown` that takes a number and counts down to zero, logging each number.
+
+function countDown(num){
+    for(i= num; i>=0; i--){
+        console.log(i);
+    }
+}
+countDown(60);
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
