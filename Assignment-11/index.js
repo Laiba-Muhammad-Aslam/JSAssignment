@@ -341,7 +341,27 @@ function countDown(num){
         console.log(i);
     }
 }
-countDown(60);
+// countDown(60);
+
+// 28. Create a function `firstNonRepeatingChar` that finds the first non-repeating character in a string.
+
+function firstNonRepeatingChar(word) {
+    let charCount = {};
+
+    for (let i = 0; i < word.length; i++) {
+        let char = word[i];
+        charCount[char] = (charCount[char] || 0) + 1;
+    }
+    // console.log(charCount);
+    for (let i = 0; i < word.length; i++) {
+        if (charCount[word[i]] === 1) {
+            return word[i];
+        }
+    }
+    return null;
+}
+console.log(firstNonRepeatingChar("Hello"));
+
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
