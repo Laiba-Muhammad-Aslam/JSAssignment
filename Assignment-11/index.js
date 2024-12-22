@@ -360,8 +360,14 @@ function firstNonRepeatingChar(word) {
     }
     return null;
 }
-console.log(firstNonRepeatingChar("Hello"));
+// console.log(firstNonRepeatingChar("Hello"));
 
+// 29. Write a function `toTitleCase` that converts a string to title case.
+
+function toTitleCase(str){
+    return str.toLowerCase().split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+}
+console.log(toTitleCase("this is a sample string"));
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
