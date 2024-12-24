@@ -369,6 +369,36 @@ function toTitleCase(str){
 }
 console.log(toTitleCase("this is a sample string"));
 
+// 30. Create a function `removeElement` that removes a specified element from an array.
+
+function removeElement(elem){
+    let arr = ["Mango", "Banana", "Apple", "Cheery"];
+    let newArr = [];
+    for(let i = 0; i< arr.length; i++){
+        if(elem != arr[i]){
+            newArr.push(arr[i]);
+        }
+    }
+    return newArr;
+}
+console.log(removeElement("Apple"));
+
+// OR 
+
+/*
+function removeElement(arr, elem) {
+    let newArr = [];
+    for(let i = 0; i < arr.length; i++) {
+        if(elem !== arr[i]) {
+            newArr.push(arr[i]);
+        }
+    }
+    return newArr;
+}
+const fruits = ["Mango", "Banana", "Apple", "Cherry"];
+console.log(removeElement(fruits, "Apple"));
+*/
+
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
 function isAdult(age){
