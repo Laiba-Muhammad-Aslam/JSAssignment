@@ -367,7 +367,7 @@ function firstNonRepeatingChar(word) {
 function toTitleCase(str){
     return str.toLowerCase().split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
 }
-console.log(toTitleCase("this is a sample string"));
+// console.log(toTitleCase("this is a sample string"));
 
 // 30. Create a function `removeElement` that removes a specified element from an array.
 
@@ -381,7 +381,7 @@ function removeElement(elem){
     }
     return newArr;
 }
-console.log(removeElement("Apple"));
+// console.log(removeElement("Apple"));
 
 // OR 
 
@@ -399,6 +399,16 @@ const fruits = ["Mango", "Banana", "Apple", "Cherry"];
 console.log(removeElement(fruits, "Apple"));
 */
 
+// 31. Write a function `swap` that swaps the values of two variables.
+
+function swap(var1, var2){
+    let num1 = var1;
+    let num2 = var2;
+    let temp = num2;
+    num2 = num1;
+   console.log(temp, num2); 
+}
+swap(5,6);
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
 function isAdult(age){
