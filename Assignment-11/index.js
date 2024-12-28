@@ -408,7 +408,23 @@ function swap(var1, var2){
     num2 = num1;
    console.log(temp, num2); 
 }
-swap(5,6);
+// swap(5,6);
+
+// 32. Create a function `countOccurrences` that counts how many times a specific value appears in an array.
+
+function countOccurrences(arr, value){
+    let count = 0;
+    for(let i = 0; i< arr.length; i++){
+        if(arr[i] === value){
+            count++;
+        }
+    }
+    return count;
+}
+let arr = [78, 89, 7, 78, 11, 22, 33, 11, 99, 0, 78, 7];
+let value = 78;
+console.log(countOccurrences(arr, value));
+
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
 function isAdult(age){
