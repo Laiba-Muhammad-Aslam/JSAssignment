@@ -421,9 +421,37 @@ function countOccurrences(arr, value){
     }
     return count;
 }
+// let arr = [78, 89, 7, 78, 11, 22, 33, 11, 99, 0, 78, 7];
+// let value = 78;
+// console.log(countOccurrences(arr, value));
+
+// 33. Write a function `mostFrequent` that finds the most frequently occurring element in an array.
+
+function mostFrequent(arr){
+    let frequencyMap = {};
+    let maxCount = 0;
+    let mostFrequentElement;
+
+    for (let i = 0; i < arr.length; i++) {
+        let element = arr[i];
+        if (frequencyMap[element]) {
+            frequencyMap[element]++;
+        } else {
+            frequencyMap[element] = 1;
+        }
+        
+        if(frequencyMap[element] > maxCount){
+            maxCount = frequencyMap[element];
+            mostFrequentElement = [element];
+        }
+    }
+    console.log(frequencyMap);
+    return mostFrequentElement;
+}
 let arr = [78, 89, 7, 78, 11, 22, 33, 11, 99, 0, 78, 7];
-let value = 78;
-console.log(countOccurrences(arr, value));
+console.log(mostFrequent(arr));
+
+
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
