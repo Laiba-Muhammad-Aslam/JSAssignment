@@ -448,10 +448,15 @@ function mostFrequent(arr){
     console.log(frequencyMap);
     return mostFrequentElement;
 }
-let arr = [78, 89, 7, 78, 11, 22, 33, 11, 99, 0, 78, 7];
-console.log(mostFrequent(arr));
+// let arr = [78, 89, 7, 78, 11, 22, 33, 11, 99, 0, 78, 7];
+// console.log(mostFrequent(arr));
 
+// 34. Create a function `combineStrings` that concatenates two strings with a space in between.
 
+function combineStrings(str1, str2){
+    return str1 + " " + str2;
+}
+console.log(combineStrings("Hello", "World"));
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
