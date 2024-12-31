@@ -469,7 +469,19 @@ function randomColor(){
 
     return `rgb(${red}, ${green}, ${blue})`;
 }
-console.log(randomColor());
+// console.log(randomColor());
+
+// 37. Write a function `findIndex` that returns the index of a specific value in an array.
+
+function findIndex(arr, value) {
+    return arr.indexOf(value);
+}
+  
+console.log(findIndex([10, 20, 30, 40], 30)); 
+console.log(findIndex([5, 7, 9, 11], 11));    
+console.log(findIndex([1, 2, 3], 4));        // Output: -1 (not found)
+
+ 
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
