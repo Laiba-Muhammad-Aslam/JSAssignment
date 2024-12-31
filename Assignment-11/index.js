@@ -456,7 +456,20 @@ function mostFrequent(arr){
 function combineStrings(str1, str2){
     return str1 + " " + str2;
 }
-console.log(combineStrings("Hello", "World"));
+// console.log(combineStrings("Hello", "World"));
+
+// 35. Write a function `randomColor` that generates and returns a random RGB color.
+
+function randomColor(){
+    let red = Math.floor(Math.random() * 256);
+    let green = Math.floor(Math.random() * 256);
+    let blue = Math.floor(Math.random() * 256);
+
+    console.log(red, green, blue);
+
+    return `rgb(${red}, ${green}, ${blue})`;
+}
+console.log(randomColor());
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
