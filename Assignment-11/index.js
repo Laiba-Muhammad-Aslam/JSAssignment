@@ -477,11 +477,36 @@ function findIndex(arr, value) {
     return arr.indexOf(value);
 }
   
-console.log(findIndex([10, 20, 30, 40], 30)); 
-console.log(findIndex([5, 7, 9, 11], 11));    
-console.log(findIndex([1, 2, 3], 4));        // Output: -1 (not found)
+// console.log(findIndex([10, 20, 30, 40], 30)); 
+// console.log(findIndex([5, 7, 9, 11], 11));    
+// console.log(findIndex([1, 2, 3], 4));        // Output: -1 (not found)
 
+// 38. Create a function `shuffleString` that shuffles the characters of a string randomly.
+
+// function shuffleString(str){
+    
+//     let newWord = "";
+//     for(let i = 0; i < str.length; i++){
+//         let ran = Math.floor(Math.random() * str.length);
+//         console.log(ran);
+//         newWord += str[ran];
+//     }
+//     console.log(newWord)
+// }
+// shuffleString("Hello");
  
+function shuffleString(str) {
+    let arr = str.split('');
+    
+    // Fisher-Yates Shuffle Algorithm to shuffle the array
+    for (let i = arr.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr.join('');
+}
+console.log(shuffleString("Hello"));
+
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
