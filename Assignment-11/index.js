@@ -505,7 +505,14 @@ function shuffleString(str) {
     }
     return arr.join('');
 }
-console.log(shuffleString("Hello"));
+// console.log(shuffleString("Hello"));
+
+// 40. Create a function `stringToArray` that converts a string to an array of words.
+
+function stringToArray(str){
+    return str.split(" ");
+}
+console.log(stringToArray("Hello This is Laiba Aslam"));
 
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
