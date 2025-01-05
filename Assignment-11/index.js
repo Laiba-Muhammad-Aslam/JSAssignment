@@ -512,7 +512,48 @@ function shuffleString(str) {
 function stringToArray(str){
     return str.split(" ");
 }
-console.log(stringToArray("Hello This is Laiba Aslam"));
+// console.log(stringToArray("Hello This is Laiba Aslam"));
+
+// 41. Write a function `mergeSortedArrays` that merges two sorted arrays into one sorted array.
+
+// function mergeSortedArrays(arr1, arr2){
+//     let newArr1 = arr1.sort();
+//     let newArr2 = arr2.sort();
+
+//     let newArr = [...newArr1, ...newArr2];
+//     return newArr;
+// }
+// let arr1 = [78, 90, 5, 45];
+// let arr2 = [38, 50, 51, 4];
+// console.log(mergeSortedArrays(arr1,arr2));
+
+
+function mergeSortedArrays(arr1, arr2) {
+    let mergedArray = [];
+    let i = 0, j = 0;
+    while (i < arr1.length && j < arr2.length) {
+        if (arr1[i] < arr2[j]) {
+            mergedArray.push(arr1[i]);
+            i++;
+        } else {
+            mergedArray.push(arr2[j]);
+            j++;
+        }
+    }
+    while (i < arr1.length) {
+        mergedArray.push(arr1[i]);
+        i++;
+    }
+    while (j < arr2.length) {
+        mergedArray.push(arr2[j]);
+        j++;
+    }
+    return mergedArray;
+}
+
+let arr1 = [5, 45, 78, 90];  
+let arr2 = [4, 38, 50, 51];
+console.log(mergeSortedArrays(arr1, arr2)); 
 
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
