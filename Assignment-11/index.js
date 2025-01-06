@@ -555,6 +555,18 @@ let arr1 = [5, 45, 78, 90];
 let arr2 = [4, 38, 50, 51];
 console.log(mergeSortedArrays(arr1, arr2)); 
 
+// 42. Create a function sumPositiveNumbers that sums all positive numbers in an array.
+
+
+function sumPositiveNumbers(arr) {
+    return arr.reduce((sum, num) => {
+      return num > 0 ? sum + num : sum;
+    }, 0);
+}
+const numbers = [1, -3, 5, 7, -2, 10];
+console.log(sumPositiveNumbers(numbers)); 
+  
+
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
