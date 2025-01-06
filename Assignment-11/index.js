@@ -563,10 +563,23 @@ function sumPositiveNumbers(arr) {
       return num > 0 ? sum + num : sum;
     }, 0);
 }
-const numbers = [1, -3, 5, 7, -2, 10];
-console.log(sumPositiveNumbers(numbers)); 
+// const numbers = [1, -3, 5, 7, -2, 10];
+// console.log(sumPositiveNumbers(numbers)); 
   
+// 44. Create a function `sumEvenNumbers` that sums all even numbers in an array.
 
+function sumEvenNumbers(arr) {
+    return arr.reduce((sum, num) => {
+      if (num % 2 === 0) {
+        sum += num;
+      }
+      return sum;
+    }, 0);
+  }
+  
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+console.log(sumEvenNumbers(numbers)); 
+  
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
