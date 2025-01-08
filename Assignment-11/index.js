@@ -577,8 +577,22 @@ function sumEvenNumbers(arr) {
     }, 0);
   }
   
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-console.log(sumEvenNumbers(numbers)); 
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+// console.log(sumEvenNumbers(numbers)); 
+
+// 46. Create a function `largestEvenNumber` that finds the largest even number in an array.
+
+function largestEvenNumber(arr) {
+    const evenNumbers = arr.filter(num => num % 2 === 0);
+    if (evenNumbers.length === 0) {
+        return null;
+    }
+    return Math.max(...evenNumbers);
+}
+const arr = [1, 2, 3, 4, 5, 6];
+const result = largestEvenNumber(arr);
+console.log(result);  
+
   
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
