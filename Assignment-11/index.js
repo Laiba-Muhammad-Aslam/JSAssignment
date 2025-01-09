@@ -610,8 +610,8 @@ function getDayOfWeek(date){
     }
     return day;
 }
-console.log("Day is: ", getDayOfWeek("9 January 2025"));
-console.log("Day is: ", getDayOfWeek("17 March 2020"));
+// console.log("Day is: ", getDayOfWeek("9 January 2025"));
+// console.log("Day is: ", getDayOfWeek("17 March 2020"));
 
 // 46. Create a function `largestEvenNumber` that finds the largest even number in an array.
 
@@ -626,7 +626,15 @@ function largestEvenNumber(arr) {
 // const result = largestEvenNumber(arr);
 // console.log(result);  
 
-  
+// 47. Write a function `mergeObjects` that merges two objects into one.
+
+function mergeObjects(obj1, obj2){
+    let merged = {...obj1, ...obj2};
+    return merged;
+}
+let obj1 = {"name": "Laiba", "field": "Computer science"};
+let obj2 = {"student": "Hira", "education": "Commerce"};
+console.log(mergeObjects(obj1, obj2));
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
