@@ -580,6 +580,39 @@ function sumEvenNumbers(arr) {
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
 // console.log(sumEvenNumbers(numbers)); 
 
+// 45. Write a function `getDayOfWeek` that returns the day of the week for a given date.
+
+function getDayOfWeek(date){
+    let userDate = new Date(date).getDay();
+    let day;
+    switch(userDate){
+        case 0:
+            day = "Sunday";
+            break;
+        case 1:
+            day = "Monday";
+            break;
+        case 2:
+            day = "Tuesday";
+            break;
+        case 3:
+            day = "Wednesday";
+            break;
+        case 4:
+            day = "Thursday";
+            break;
+        case 5:
+            day = "Friday";
+            break;
+        case 6:
+            day = "Saturday";  
+            break;          
+    }
+    return day;
+}
+console.log("Day is: ", getDayOfWeek("9 January 2025"));
+console.log("Day is: ", getDayOfWeek("17 March 2020"));
+
 // 46. Create a function `largestEvenNumber` that finds the largest even number in an array.
 
 function largestEvenNumber(arr) {
@@ -589,9 +622,9 @@ function largestEvenNumber(arr) {
     }
     return Math.max(...evenNumbers);
 }
-const arr = [1, 2, 3, 4, 5, 6];
-const result = largestEvenNumber(arr);
-console.log(result);  
+// const arr = [1, 2, 3, 4, 5, 6];
+// const result = largestEvenNumber(arr);
+// console.log(result);  
 
   
 
