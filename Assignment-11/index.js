@@ -644,7 +644,27 @@ function randomInteger(num1, num2) {
     let ran = Math.floor(Math.random() * (num2 - num1 + 1)) + num1;
     console.log(ran);
 }
-randomInteger(7,10);
+// randomInteger(7,10);
+
+// 50. Create a function `uniqueArray` that returns an array with duplicate values removed.
+
+function uniqueArray(arr){
+    let checkArr = arr;
+    // console.log(checkArr);
+    let newArr = [];
+    for(let i = 0; i< checkArr.length; i++){
+        if(!(newArr.includes(checkArr[i]))){
+            // console.log("nhi hai yeh wala");
+            newArr.push(checkArr[i]);
+        }else{
+            // console.log("hai bhai yeh");
+            console.log("Exists in the array...")
+        }
+}
+console.log("Unique Array :", newArr)
+}
+let myArr = [76, 89, 76, 10, 100, 10, 65, 32, 32, 87, 100];
+uniqueArray(myArr);
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
