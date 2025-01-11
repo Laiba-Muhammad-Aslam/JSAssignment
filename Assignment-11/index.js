@@ -632,9 +632,19 @@ function mergeObjects(obj1, obj2){
     let merged = {...obj1, ...obj2};
     return merged;
 }
-let obj1 = {"name": "Laiba", "field": "Computer science"};
-let obj2 = {"student": "Hira", "education": "Commerce"};
-console.log(mergeObjects(obj1, obj2));
+// let obj1 = {"name": "Laiba", "field": "Computer science"};
+// let obj2 = {"student": "Hira", "education": "Commerce"};
+// console.log(mergeObjects(obj1, obj2));
+
+// 48 (Repeat) 
+
+// 49. Write a function `randomInteger` that generates a random integer between two given values.
+
+function randomInteger(num1, num2) {
+    let ran = Math.floor(Math.random() * (num2 - num1 + 1)) + num1;
+    console.log(ran);
+}
+randomInteger(7,10);
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
