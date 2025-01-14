@@ -691,8 +691,22 @@ function findMissingNumber(arr) {
     const actualSum = arr.reduce((sum, num) => sum + num, 0);
     return expectedSum - actualSum;
 }
-const arr = [1, 2, 4, 5, 6];
-console.log(findMissingNumber(arr));
+// const arr = [1, 2, 4, 5, 6];
+// console.log(findMissingNumber(arr));
+
+// 55. Write a function `countUppercase` that counts the number of uppercase letters in a string.
+
+function countUppercase(str) {
+    let count = 0;
+    for (let char of str) {
+      if (char >= 'A' && char <= 'Z') {
+        count++;
+      }
+    }
+    return count;
+}
+const strr = "Hello World!";
+console.log(countUppercase(strr)); 
 
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
