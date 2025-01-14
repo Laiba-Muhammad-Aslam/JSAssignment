@@ -678,9 +678,22 @@ function isAnagram(str1, str2) {
     return sortedStr1 === sortedStr2;
 }
 
-console.log(isAnagram("listen", "silent")); 
-console.log(isAnagram("hello", "world"));   
-console.log(isAnagram("Astronomer", "Moon starer")); 
+// console.log(isAnagram("listen", "silent")); 
+// console.log(isAnagram("hello", "world"));   
+// console.log(isAnagram("Astronomer", "Moon starer")); 
+
+// 54. Create a function `findMissingNumber` that finds the missing number in a given array of consecutive integers.
+
+function findMissingNumber(arr) {
+    const n = arr.length + 1;
+    const expectedSum = (n * (n + 1)) / 2;
+    
+    const actualSum = arr.reduce((sum, num) => sum + num, 0);
+    return expectedSum - actualSum;
+}
+const arr = [1, 2, 4, 5, 6];
+console.log(findMissingNumber(arr));
+
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
