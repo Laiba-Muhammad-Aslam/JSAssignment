@@ -682,6 +682,17 @@ function isAnagram(str1, str2) {
 // console.log(isAnagram("hello", "world"));   
 // console.log(isAnagram("Astronomer", "Moon starer")); 
 
+// 53. Write a function `getAge` that calculates the age of a person based on their birth year.
+
+function getAge(year){
+    let birthYear = year;
+    let date = new Date().getFullYear();
+    let age = date - birthYear;
+    // console.log(date);
+    console.log(`Your Age is: ${age}`);
+}
+getAge(2004);
+
 // 54. Create a function `findMissingNumber` that finds the missing number in a given array of consecutive integers.
 
 function findMissingNumber(arr) {
@@ -705,8 +716,8 @@ function countUppercase(str) {
     }
     return count;
 }
-const strr = "Hello World!";
-console.log(countUppercase(strr)); 
+// const strr = "Hello World!";
+// console.log(countUppercase(strr)); 
 
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
