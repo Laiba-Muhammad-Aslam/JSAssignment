@@ -689,7 +689,7 @@ function getAge(year){
     let date = new Date().getFullYear();
     let age = date - birthYear;
     // console.log(date);
-    console.log(`Your Age is: ${age}`);
+    // console.log(`Your Age is: ${age}`);
 }
 getAge(2004);
 
@@ -719,6 +719,19 @@ function countUppercase(str) {
 // const strr = "Hello World!";
 // console.log(countUppercase(strr)); 
 
+// 67. Write a function `getCurrentDateTime` that returns the current date and time in a specified format.
+
+function getCurrentDateTime(){
+    let date = new Date().getDate();
+    let month = (new Date().getMonth()) + 1;
+    let year = new Date().getFullYear();
+    let hour = new Date().getHours();
+    let min = (new Date().getMinutes()) + 1;
+    let sec = new Date().getSeconds();
+
+    return date + " " + month + " " + year + " " + hour + " " + min + " " + sec;
+}
+console.log(getCurrentDateTime());
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
