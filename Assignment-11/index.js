@@ -719,6 +719,24 @@ function countUppercase(str) {
 // const strr = "Hello World!";
 // console.log(countUppercase(strr)); 
 
+// 59. Write a function `addToCart` that adds an item to a shopping cart and updates the cart count.
+
+function addToCart(item){
+    let amount = 0;
+    let products = ["shoes", "clothes", "lip balm"];
+    let userProduct = item;
+    if(products.includes(userProduct)){
+        // console.log("found");
+        amount+=1000;
+    }else{
+        console.log("Not found")
+    }
+    return amount;
+}
+addToCart("lip balm");
+addToCart("lip baaalm");
+addToCart("shoes");
+console.log(addToCart("clothes"));
 // 67. Write a function `getCurrentDateTime` that returns the current date and time in a specified format.
 
 function getCurrentDateTime(){
@@ -742,9 +760,9 @@ function isAdult(age){
         return false;
     }
 }
-console.log(isAdult(16));
-console.log(isAdult(18));
-console.log(isAdult(20));
+// console.log(isAdult(16));
+// console.log(isAdult(18));
+// console.log(isAdult(20));
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
