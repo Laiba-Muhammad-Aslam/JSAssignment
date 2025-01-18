@@ -731,7 +731,20 @@ function getCurrentDateTime(){
 
     return date + " " + month + " " + year + " " + hour + " " + min + " " + sec;
 }
-console.log(getCurrentDateTime());
+// console.log(getCurrentDateTime());
+
+// 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
+
+function isAdult(age){
+    if(age >= 18){
+        return true;
+    }else{
+        return false;
+    }
+}
+console.log(isAdult(16));
+console.log(isAdult(18));
+console.log(isAdult(20));
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
