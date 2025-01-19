@@ -733,10 +733,22 @@ function addToCart(item){
     }
     return amount;
 }
-addToCart("lip balm");
-addToCart("lip baaalm");
-addToCart("shoes");
-console.log(addToCart("clothes"));
+// addToCart("lip balm");
+// addToCart("lip baaalm");
+// addToCart("shoes");
+// console.log(addToCart("clothes"));
+
+// 61. Write a function `sortByPrice` that sorts an array of products by their price
+
+function sortByPrice() {
+    let arr = [200, 100, 50, 400, 3000, 300];
+    arr.sort((a, b) => a - b);  
+    return arr;
+}
+
+console.log(sortByPrice());
+
+
 // 67. Write a function `getCurrentDateTime` that returns the current date and time in a specified format.
 
 function getCurrentDateTime(){
