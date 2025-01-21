@@ -682,6 +682,23 @@ function isAnagram(str1, str2) {
 // console.log(isAnagram("hello", "world"));   
 // console.log(isAnagram("Astronomer", "Moon starer")); 
 
+// 52. Create a function `removeVowels` that takes a string and returns a new string with all vowels removed.
+
+function removeVowels(str){
+    let myStr = str.split("");
+    let myArr = [];
+
+    for (let i = 0; i < myStr.length; i++) {  
+        if (myStr[i] !== "a" && myStr[i] !== "e" && myStr[i] !== "i" && myStr[i] !== "o" && myStr[i] !== "u" &&
+            myStr[i] !== "A" && myStr[i] !== "E" && myStr[i] !== "I" && myStr[i] !== "O" && myStr[i] !== "U") {
+            myArr.push(myStr[i]);
+        }
+    }
+    
+    console.log(myArr.join("")); 
+}
+removeVowels("Laiba Aslam");
+
 // 53. Write a function `getAge` that calculates the age of a person based on their birth year.
 
 function getAge(year){
@@ -746,7 +763,7 @@ function sortByPrice() {
     return arr;
 }
 
-console.log(sortByPrice());
+// console.log(sortByPrice());
 
 
 // 67. Write a function `getCurrentDateTime` that returns the current date and time in a specified format.
