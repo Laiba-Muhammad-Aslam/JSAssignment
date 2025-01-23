@@ -565,6 +565,16 @@ function sumPositiveNumbers(arr) {
 }
 // const numbers = [1, -3, 5, 7, -2, 10];
 // console.log(sumPositiveNumbers(numbers)); 
+
+// 43. Write a function `extractDomain` that extracts the domain from a URL.
+
+function extractDomain(url) {
+    let domain = url.replace(/^(https?:\/\/)?(www\.)?/, '');
+    domain = domain.split('/')[0];
+    return domain;
+  }
+  
+// console.log(extractDomain("https://cloudflare.com/learning/"));
   
 // 44. Create a function `sumEvenNumbers` that sums all even numbers in an array.
 
