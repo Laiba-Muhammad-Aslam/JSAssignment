@@ -253,7 +253,9 @@ function repeatString(str, number){
         return str.repeat(number);
     }
 }
-console.log(repeatString("Laiba", 2));
+// console.log(repeatString("Laiba", 2));
+
+// 21 REPEAT 49
 
 // 22. Create a function `average` that calculates the average of an array of numbers.
 
@@ -471,6 +473,22 @@ function randomColor(){
 }
 // console.log(randomColor());
 
+// 36. Create a function `sumOfDigits` that returns the sum of the digits of a number.
+
+function sumOfDigits(num){
+    let number = num.split("");
+    let count = 0;
+    for(let i =0; i < num.length; i++){
+        let strToNum = Number(num[i]);
+        count+= strToNum;
+    }
+    // console.log(number);
+    // console.log(count);
+    return count;
+}
+// console.log(sumOfDigits("123"));
+// console.log(sumOfDigits("8906"));
+
 // 37. Write a function `findIndex` that returns the index of a specific value in an array.
 
 function findIndex(arr, value) {
@@ -553,7 +571,7 @@ function mergeSortedArrays(arr1, arr2) {
 
 let arr1 = [5, 45, 78, 90];  
 let arr2 = [4, 38, 50, 51];
-console.log(mergeSortedArrays(arr1, arr2)); 
+// console.log(mergeSortedArrays(arr1, arr2)); 
 
 // 42. Create a function sumPositiveNumbers that sums all positive numbers in an array.
 
