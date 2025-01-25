@@ -525,6 +525,22 @@ function shuffleString(str) {
 }
 // console.log(shuffleString("Hello"));
 
+// 39. Write a function `secondLargest` that finds the second largest number in an array.
+
+function secondLargest(arr){
+    let max = Math.max(...arr);
+    let secondMax = -Infinity;
+
+    // console.log(max);
+    for(let i =0; i < arr.length; i++){
+        if(arr[i] < max && arr[i] > secondMax){
+            secondMax =  arr[i];
+        }
+    }
+    return secondMax;
+}
+console.log("Second Largest Number in the Array is: ",secondLargest([23, 67, 87, 55, 200]));
+
 // 40. Create a function `stringToArray` that converts a string to an array of words.
 
 function stringToArray(str){
