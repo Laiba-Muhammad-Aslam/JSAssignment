@@ -539,7 +539,7 @@ function secondLargest(arr){
     }
     return secondMax;
 }
-console.log("Second Largest Number in the Array is: ",secondLargest([23, 67, 87, 55, 200]));
+// console.log("Second Largest Number in the Array is: ",secondLargest([23, 67, 87, 55, 200]));
 
 // 40. Create a function `stringToArray` that converts a string to an array of words.
 
@@ -705,7 +705,7 @@ function uniqueArray(arr){
             console.log("Exists in the array...")
         }
 }
-console.log("Unique Array :", newArr)
+// console.log("Unique Array :", newArr)
 }
 // let myArr = [76, 89, 76, 10, 100, 10, 65, 32, 32, 87, 100];
 // uniqueArray(myArr);
@@ -779,6 +779,22 @@ function countUppercase(str) {
 }
 // const strr = "Hello World!";
 // console.log(countUppercase(strr)); 
+
+// 56. Create a function `validateEmail` that checks if a given email address is valid.
+
+function validateEmail(email) {
+    let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+    if(regex.test(email)) {
+        console.log("Email is valid");
+    } else {
+        console.log("Email is not valid");
+    }
+}
+
+validateEmail("laiba@gmail.com");  
+validateEmail("myemail");
+
 
 // 59. Write a function `addToCart` that adds an item to a shopping cart and updates the cart count.
 
