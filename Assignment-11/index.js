@@ -792,9 +792,19 @@ function validateEmail(email) {
     }
 }
 
-validateEmail("laiba@gmail.com");  
-validateEmail("myemail");
+// validateEmail("laiba@gmail.com");  
+// validateEmail("myemail");
 
+// 57. Write a function `toggleNavbar` that shows or hides a navigation bar when a button is clicked.
+
+let navbar = document.getElementById("navbar");
+let hideBtn = document.getElementById("hide");
+
+hideBtn.addEventListener("click", toggleNavbar);
+
+function toggleNavbar(){
+    navbar.style.display = "none";
+}
 
 // 59. Write a function `addToCart` that adds an item to a shopping cart and updates the cart count.
 
