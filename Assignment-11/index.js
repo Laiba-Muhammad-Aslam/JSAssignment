@@ -806,6 +806,36 @@ function toggleNavbar(){
     navbar.style.display = "none";
 }
 
+// 58. Create a function `submitForm` that validates a form and submits it if all fields are filled correctly.
+
+function submitForm() {
+    let email = document.getElementById('email').value;
+    let password = document.getElementById('password').value;
+    let name = document.getElementById('name').value;
+    
+    let isValid = true;
+
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert("Invalid email address");
+        isValid = false;
+    }
+    if (name.trim() === "") {
+        alert("Name field cannot be empty");
+        isValid = false;
+    }
+    if (password.length < 6) {
+        alert("Password must be at least 6 characters long");
+        isValid = false;
+    }
+    if (isValid) {
+        alert("Form is valid. Submitting form...");
+    } else {
+        alert("Form validation failed. Please correct the errors.");
+    }
+}
+
+
 // 59. Write a function `addToCart` that adds an item to a shopping cart and updates the cart count.
 
 function addToCart(item){

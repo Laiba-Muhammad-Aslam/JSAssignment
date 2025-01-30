@@ -19,6 +19,24 @@
         </div>
         <button id="hide">Hide Me</button>
      </nav>
+
+     <!-- Form  -->
+
+     <h2>Simple Form Validation</h2>
+    
+     <form id="myForm" onsubmit="event.preventDefault(); submitForm();">
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+ 
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+ 
+         <label for="password">Password:</label>
+         <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+ 
+         <button type="submit">Submit</button>
+     </form>
+ 
     <!-- js file  -->
     <script src="index.js"></script>
 </body>
