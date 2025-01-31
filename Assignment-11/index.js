@@ -855,6 +855,24 @@ function addToCart(item){
 // addToCart("shoes");
 // console.log(addToCart("clothes"));
 
+// 60. Create a function `searchProducts` that searches for products in an array and returns matching results.
+
+function searchProducts(search){
+    let arr = ["eyeliner", "foundation", "lipstick", "sun block" ];
+    
+    let product = arr.find(item => item === search);
+    
+    if (product) {
+        console.log("Product found: " + product);
+    } else {
+        console.log("Product not found");
+    }
+}
+
+searchProducts("chips");        
+searchProducts("foundation");   
+
+
 // 61. Write a function `sortByPrice` that sorts an array of products by their price
 
 function sortByPrice() {
