@@ -869,9 +869,8 @@ function searchProducts(search){
     }
 }
 
-searchProducts("chips");        
-searchProducts("foundation");   
-
+// searchProducts("chips");        
+// searchProducts("foundation");   
 
 // 61. Write a function `sortByPrice` that sorts an array of products by their price
 
@@ -882,6 +881,20 @@ function sortByPrice() {
 }
 
 // console.log(sortByPrice());
+
+// 62. Create a function `highlightText` that highlights specific keywords in a block of text.
+
+function highlightText() {
+    let text = "Sunflower was used in many ways throughout the various American Indian tribes. Seed was ground or pounded into flour for cakes, mush or bread. Some tribes mixed the meal with other vegetables such as beans, squash, and corn. The seed was also cracked and eaten for a snack. There are references of squeezing the oil from the seed and using the oil in making bread."
+    
+    let highlightedText = text.replace(/beans/i, "<mark>$&</mark>");
+    
+    console.log(highlightedText);
+}
+
+highlightText();
+
+
 
 
 // 67. Write a function `getCurrentDateTime` that returns the current date and time in a specified format.
