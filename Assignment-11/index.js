@@ -892,7 +892,21 @@ function highlightText() {
     console.log(highlightedText);
 }
 
-highlightText();
+// highlightText();
+
+// 63. Write a function `validatePassword` that checks if a password meets certain criteria (length, special characters, etc.).
+
+function validatePassword(password){
+    let condition = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+    
+    if(password.match(condition)){
+        console.log("It is a valid Password");
+    }else{
+        console.log("Not a Valid Password, Minimum eight characters, at least one uppercase letter, one lowercase letter and one number:");
+    }
+}
+validatePassword("err123@");
+validatePassword("Ery10owr");
 
 
 
