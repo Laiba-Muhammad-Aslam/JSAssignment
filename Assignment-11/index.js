@@ -905,8 +905,17 @@ function validatePassword(password){
         console.log("Not a Valid Password, Minimum eight characters, at least one uppercase letter, one lowercase letter and one number:");
     }
 }
-validatePassword("err123@");
-validatePassword("Ery10owr");
+// validatePassword("err123@");
+// validatePassword("Ery10owr");
+
+// 64. Create a function `scrollToTop` that scrolls the page to the top smoothly when called.
+
+function scrollToTop(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+let scrollBtn = document.getElementById("scrollBtn");
+scrollBtn.addEventListener("click", scrollToTop);
 
 
 

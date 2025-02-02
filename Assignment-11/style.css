@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    height: 100%;
+}
 nav{
     display: flex;
     align-items: center;
@@ -23,4 +26,12 @@ nav ul li{
 }
 nav button{
     padding: 0.7rem;
+}
+#scrollBtn{
+    background-color: blue;
+    color: #ffff;
+    padding: 1rem;
+    border: none;
+    margin: 1rem;
+    cursor: pointer;
 }
