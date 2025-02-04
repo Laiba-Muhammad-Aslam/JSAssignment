@@ -914,11 +914,21 @@ function scrollToTop(){
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-let scrollBtn = document.getElementById("scrollBtn");
-scrollBtn.addEventListener("click", scrollToTop);
+// let scrollBtn = document.getElementById("scrollBtn");
+// scrollBtn.addEventListener("click", scrollToTop);
 
+// 65. Write a function `updateProfilePicture` that allows a user to upload a new profile picture
 
-
+function updateProfilePicture(){
+    let newImg = document.getElementById("file");
+    let imgContainer = document.getElementById("img");
+    
+    if(newImg.files && newImg.files[0]){
+        let newUrl = URL.createObjectURL(newImg.files[0]);
+        imgContainer.src = newUrl;
+    }
+}
+updateProfilePicture();
 
 // 67. Write a function `getCurrentDateTime` that returns the current date and time in a specified format.
 
