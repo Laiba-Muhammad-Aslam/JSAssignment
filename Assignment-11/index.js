@@ -928,7 +928,21 @@ function updateProfilePicture(){
         imgContainer.src = newUrl;
     }
 }
-updateProfilePicture();
+// updateProfilePicture();
+
+// 66. Create a function `validatePhoneNumber` that checks if a phone number is valid based on a specified format.
+
+function validatePhoneNumber(number){
+    let phoneRegex = /^(?:\+92|03)\d{9}$/;
+    if(number.match(phoneRegex)){
+        console.log("It is a valid Number");
+    }else{
+        console.log("It is not a valid Number");
+    }
+}
+validatePhoneNumber("03245678940");
+validatePhoneNumber("032456780");
+validatePhoneNumber("+92245786780");
 
 // 67. Write a function `getCurrentDateTime` that returns the current date and time in a specified format.
 
