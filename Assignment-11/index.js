@@ -990,7 +990,28 @@ function generateRandomPassword(){
     console.log("Generated Password: " + password);
 }
 
-generateRandomPassword();
+// generateRandomPassword();
+
+// 69. Write a function `rotateArray` that rotates an array to the right by a given number of steps.
+
+function rotateArray(arr, steps){
+    let totalNumbers = arr.length;
+
+    // Handle the case where steps > totalNumbers by using modulo
+    steps = steps % totalNumbers;
+
+    // Split the array into two parts and swap their positions
+    let rotatedPart = arr.slice(-steps); // Get the last 'steps' elements
+    let remainingPart = arr.slice(0, totalNumbers - steps); // Get the rest of the elements
+
+    // Combine both parts to form the rotated array
+    let newArr = [...rotatedPart, ...remainingPart];
+
+    console.log("New Array:", newArr);
+}
+
+rotateArray([1, 3, 5, 7, 9], 2);
+rotateArray([1, 2, 3, 4, 5], 4);
 
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
