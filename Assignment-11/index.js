@@ -958,6 +958,41 @@ function getCurrentDateTime(){
 }
 // console.log(getCurrentDateTime());
 
+// 68. Create a function `generateRandomPassword` that creates a random password based on user-defined criteria.
+
+function generateRandomPassword(){
+    let num = prompt("Do you want Numbers in your Password? Y | N" );
+    let alpha = prompt("Do you want Alphabets in your Password? Y | N");
+    let speChar = prompt("Do you want Special Characters in your Password? Y | N");
+
+    let numbers = "0123456789";
+    let alphabets = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let specialChars = "!@#$%^&*()_+[]{}|;:',.<>?";
+
+    let charPool = "";
+
+    if(num === "Y" || num === "y") charPool += numbers;
+    if(alpha === "Y" || alpha === "y") charPool += alphabets;
+    if(speChar === "Y" || speChar === "y") charPool += specialChars;
+
+    if(charPool === ""){
+        console.log("Please select at least one type of characters for your password.");
+        return;
+    }
+    let passwordLength = 12;
+    let password = "";
+    
+    for(let i = 0; i < passwordLength; i++){
+        let randomIndex = Math.floor(Math.random() * charPool.length);
+        password += charPool[randomIndex];
+    }
+
+    console.log("Generated Password: " + password);
+}
+
+generateRandomPassword();
+
+
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
 
 function isAdult(age){
