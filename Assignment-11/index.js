@@ -1010,8 +1010,39 @@ function rotateArray(arr, steps){
     console.log("New Array:", newArr);
 }
 
-rotateArray([1, 3, 5, 7, 9], 2);
-rotateArray([1, 2, 3, 4, 5], 4);
+// rotateArray([1, 3, 5, 7, 9], 2);
+// rotateArray([1, 2, 3, 4, 5], 4);
+
+// 70. Create a function `comparePasswords` that checks if two password fields match during registration.
+
+function comparePasswords(password){
+    let passwords = {
+        "Laiba" : "1234",
+        "Rimsha": "897",
+        "Amna": "779",
+    }
+    let userPassword = password;
+
+    let passwordValues = Object.values(passwords);
+    let isValid = false;
+
+
+    for(let i =0; i < passwordValues.length; i++){
+        if(userPassword === passwordValues[i]){
+            isValid = true;
+            break;
+        }
+    }
+
+    if(isValid){
+        console.log("Password is Valid");
+    }else{
+        console.log("Password is not Valid");
+    }
+       
+}
+comparePasswords("1234");
+comparePasswords("348");
 
 
 // 71. Write a function `isAdult` that takes an age and returns true if the age is 18 or older, and false otherwise.
