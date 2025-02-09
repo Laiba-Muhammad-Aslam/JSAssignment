@@ -1093,3 +1093,10 @@ function squareNumber(number){
 }
 // let number = +prompt("Enter a Number: ");
 // console.log(squareNumber(number));
+
+// 75. Write a function `countChars` that counts the number of characters in a string.
+
+function countChars(str){
+    return str.length;
+}
+console.log("No of characters in a String", countChars("Hello this is Laiba Aslam"));
