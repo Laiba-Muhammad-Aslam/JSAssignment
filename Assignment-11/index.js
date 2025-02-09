@@ -1071,6 +1071,13 @@ function isAdult(age){
 // let age = +prompt("Enter your age: ");
 // console.log(isAdult(age));
 
+// 72. Create a function `concatStrings` that takes two strings and returns them concatenated together.
+
+function concatStrings(str1, str2){
+    return str1 + " " + str2;
+}
+console.log(concatStrings("Hello," , "My name is Laiba Muhammad Aslam"));
+
 // 73. Write a function `greetUser` that takes a name and returns a greeting message (e.g., "Hello, [name]!").
 
 function greetUser(name){
