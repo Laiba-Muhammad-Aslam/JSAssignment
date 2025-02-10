@@ -1099,4 +1099,18 @@ function squareNumber(number){
 function countChars(str){
     return str.length;
 }
-console.log("No of characters in a String", countChars("Hello this is Laiba Aslam"));
+// console.log("No of characters in a String", countChars("Hello this is Laiba Aslam"));
+
+// 76. Create a function `isString` that checks if a given input is a string and returns true or false
+
+function isString(str){
+    let isStr = typeof str;
+    // console.log(isStr);
+    if(isStr == "string"){
+        return "Given Input is String";
+    }else{
+        return "Given input is not String";
+    }
+}
+console.log(isString("Laiba"));
+console.log(isString(662));
