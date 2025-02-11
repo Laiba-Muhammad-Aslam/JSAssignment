@@ -1112,5 +1112,18 @@ function isString(str){
         return "Given input is not String";
     }
 }
-console.log(isString("Laiba"));
-console.log(isString(662));
+// console.log(isString("Laiba"));
+// console.log(isString(662));
+
+// 77. Write a function `findMin` that takes an array of numbers and returns the smallest number.
+
+function findMin(arr){
+    let min = Infinity;
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] < min){
+            min = arr[i];
+        }
+    }
+    return min;
+}
+console.log("Minimum number in Array: ",findMin([89, 8, 33, 90, 7, 5]));
