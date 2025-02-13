@@ -1137,4 +1137,12 @@ function splitString(str){
     }
     console.log(arr);
 }
-splitString("Laiba");
+// splitString("Laiba");
+
+// 79. Write a function `removeLastElement` that takes an array and returns a new array with the last element removed.
+
+function removeLastElement(arr){
+    let newArr = arr.pop();
+    return arr;
+}
+console.log(removeLastElement([45, 98, 76, 10, 14]));
