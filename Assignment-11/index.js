@@ -1126,4 +1126,15 @@ function findMin(arr){
     }
     return min;
 }
-console.log("Minimum number in Array: ",findMin([89, 8, 33, 90, 7, 5]));
+// console.log("Minimum number in Array: ",findMin([89, 8, 33, 90, 7, 5]));
+
+// 78. Create a function `splitString` that takes a string and returns an array of its characters.
+
+function splitString(str){
+    let arr = [];
+    for(let i = 0; i < str.length; i++){
+        arr.push(str[i]);
+    }
+    console.log(arr);
+}
+splitString("Laiba");
