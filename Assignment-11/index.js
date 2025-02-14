@@ -1145,4 +1145,23 @@ function removeLastElement(arr){
     let newArr = arr.pop();
     return arr;
 }
-console.log(removeLastElement([45, 98, 76, 10, 14]));
+// console.log(removeLastElement([45, 98, 76, 10, 14]));
+
+// 80. Create a function `toggleCase` that takes a string and toggles the case of each character.
+
+function toggleCase(str){
+    let newStr = "";
+    for(let i = 0; i< str.length; i++){
+        if(str[i] == str[i].toUpperCase()){
+            newStr+= str[i].toLowerCase();
+        }
+        else if(str[i] == str[i].toLowerCase()){
+            newStr+= str[i].toUpperCase();
+        }else{
+            newStr+= str[i];
+        }
+    }
+    return newStr;
+}
+console.log(toggleCase("laIba"));
+console.log(toggleCase("MaHA!!"));
