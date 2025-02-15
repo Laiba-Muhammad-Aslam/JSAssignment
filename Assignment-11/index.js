@@ -1163,5 +1163,21 @@ function toggleCase(str){
     }
     return newStr;
 }
-console.log(toggleCase("laIba"));
-console.log(toggleCase("MaHA!!"));
+// console.log(toggleCase("laIba"));
+// console.log(toggleCase("MaHA!!"));
+
+// 81. Write a function `countConsonants` that takes a string and returns the number of consonants in that string.
+
+function countConsonants(str){
+    count = 0;
+    for(let i = 0; i< str.length; i++){
+        if(str[i] !== "a" && str[i] !== "e" && str[i] !== "i" &&  str[i] !== "o" && str[i] !== "u" && str[i] !== "A" && str[i] !== "E" && str[i] !== "I" && str[i] !== "O" && str[i] !== "U"){
+             count++;
+        }
+    }
+    console.log(count);
+}
+// console.log(countConsonants("Laiba"));
+countConsonants("Laiba");
+countConsonants("Maham");
+countConsonants("Shazia");
