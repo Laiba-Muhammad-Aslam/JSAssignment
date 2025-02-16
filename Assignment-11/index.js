@@ -1178,6 +1178,15 @@ function countConsonants(str){
     console.log(count);
 }
 // console.log(countConsonants("Laiba"));
-countConsonants("Laiba");
-countConsonants("Maham");
-countConsonants("Shazia");
+// countConsonants("Laiba");
+// countConsonants("Maham");
+// countConsonants("Shazia");
+
+// 82. Create a function `removeWhitespace` that removes all leading and trailing whitespace from a string.
+
+function removeWhiteSpaces(str) {
+    let newStr = str.trim();
+    return newStr;
+}
+
+console.log(removeWhiteSpaces("   Hello, I am Laiba Aslam   "));
