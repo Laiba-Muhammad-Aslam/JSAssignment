@@ -1189,4 +1189,15 @@ function removeWhiteSpaces(str) {
     return newStr;
 }
 
-console.log(removeWhiteSpaces("   Hello, I am Laiba Aslam   "));
+// console.log(removeWhiteSpaces("   Hello, I am Laiba Aslam   "));
+
+// 83 Repeat 
+
+// 84. Write a function `formatCurrency` that takes a number and formats it as a currency string
+
+function formatCurrency(amount){
+    return amount.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+}
+console.log(formatCurrency(12345.67));  
+console.log(formatCurrency(1000000.5)); 
+console.log(formatCurrency(50));
