@@ -1198,6 +1198,13 @@ function removeWhiteSpaces(str) {
 function formatCurrency(amount){
     return amount.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
 }
-console.log(formatCurrency(12345.67));  
-console.log(formatCurrency(1000000.5)); 
-console.log(formatCurrency(50));
+// console.log(formatCurrency(12345.67));  
+// console.log(formatCurrency(1000000.5)); 
+// console.log(formatCurrency(50));
+
+// 85. Create a function `getElementById` that takes an ID and returns the HTML element with that ID.
+
+function getElementById(id){
+    return document.getElementById(id).innerHTML;
+}
+console.log(getElementById("scrollBtn"));
