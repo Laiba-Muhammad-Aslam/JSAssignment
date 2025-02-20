@@ -1207,4 +1207,28 @@ function formatCurrency(amount){
 function getElementById(id){
     return document.getElementById(id).innerHTML;
 }
-console.log(getElementById("scrollBtn"));
+// console.log(getElementById("scrollBtn"));
+
+// 86. Write a function `formatDate(date)` that takes a date object and returns a formatted date string in the format YYYY-MM-DD.
+
+function formatDate(){
+    let currentDate = new Date();
+    console.log(currentDate);
+
+    // Get the year
+    let year = currentDate.getFullYear();
+
+    // Get the month and add 1 (because getMonth() returns 0-11)
+    let month = currentDate.getMonth() + 1;
+
+    // Get the day of the month
+    let day = currentDate.getDate();
+
+    // Make sure month and day are two digits (e.g., 01, 02...)
+    month = month < 10 ? "0" + month : month;
+    day = day < 10 ? "0" + day : day;
+
+    let formattedDate = year + "-" + month + "-" + day;
+    console.log(formattedDate);
+}
+formatDate();
