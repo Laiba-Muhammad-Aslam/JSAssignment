@@ -1231,4 +1231,16 @@ function formatDate(){
     let formattedDate = year + "-" + month + "-" + day;
     console.log(formattedDate);
 }
-formatDate();
+// formatDate();
+
+// 87. Create a function `resizeElement(elementId, width, height)` that resizes the HTML element with the specified ID to the provided width and height.
+
+function resizeElement(id, width, height){
+    let userDefinedId = document.getElementById(id);
+    let userDefinedWidth = width;
+    let userDefinedHeight = height;
+    // console.log(userDefinedId, userDefinedWidth, userDefinedHeight);
+    userDefinedId.style.width = userDefinedWidth + "px";
+    userDefinedId.style.height = userDefinedHeight + "px";
+}
+resizeElement("img", 150, 150);
