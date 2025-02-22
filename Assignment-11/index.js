@@ -1243,4 +1243,11 @@ function resizeElement(id, width, height){
     userDefinedId.style.width = userDefinedWidth + "px";
     userDefinedId.style.height = userDefinedHeight + "px";
 }
-resizeElement("img", 150, 150);
+// resizeElement("img", 150, 150);
+
+// 88. Write a function that flattens a nested array into a single array.
+
+function flattenArray(arr){
+    console.log(arr.flat());
+}
+flattenArray([1, 5, 8, [55, 90, 23], 86, [52, 100, 89], 900, 456, 986, [567, 378, 846]]);
